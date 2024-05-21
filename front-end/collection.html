@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/collection.css">
+  </head>
+
+  <body>
+    <!-- Header / Side Bar -->
+    <div id="mySidebar" class="sidebar">
+      <a
+        href="javascript:void(0)"
+        id="xbtn"
+        class="closebtn"
+        onclick="closeNav()"
+        >&times;</a
+      >
+      <img src="images/logo hp.png" alt="Logo Harry Potter" />
+      <a href="index.html">Home</a>
+      <a href="collection.html">All Cards</a>
+      <a id="trade-link">Trade</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <header>
+      <button class="openbtn" onclick="openNav()">☰</button>
+    </header>
+
+    <main>
+      <section class="collection">
+        <h2>My Collection</h2>
+
+        <!-- Filters -->
+        <div class="filter">
+          <h3>Filter by house :</h3>
+          <button data-house="all">All</button>
+          <button data-house="gryffindor">Gryffindor</button>
+          <button data-house="hufflepuff">Hufflepuff</button>
+          <button data-house="ravenclaw">Ravenclaw</button>
+          <button data-house="slytherin">Slytherin</button>
+          <button data-house="other">Other</button>
+          <button data-house="fav">Favorite</button>
+
+          <!-- Search Bar -->
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by character name"
+          />
+        </div>
+
+        <div class="cards"></div>
+      </section>
+    </main>
+
+    <!-- Floating Button -->
+    <button class="floating-btn">Trade</button>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Card Exchange Form</h2>
+        <form id="exchange-form">
+          <label for="person">User:</label>
+          <select id="person" name="person"></select>
+          <label for="card">Card:</label>
+          <select id="card" name="card"></select>
+          <button type="submit">Exchange</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p>Plan du Site</p>
+        <p>Mentions légales</p>
+        <p>Cookies</p>
+        <p>FAQ</p>
+      </div>
+
+      <div></div>
+
+      <div>
+        <p>&copy; 2024 Wizard Exchange. All rights reserved.</p>
+        <p>
+          Contact us at:
+          <a href="mailto:support@wizardexchange.com" style="color: white"
+            >support@wizardexchange.com</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/side-nav.js"></script>
+
+  </body>
+</html>

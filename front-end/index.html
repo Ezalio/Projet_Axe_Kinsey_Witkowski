@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- Header / Side Bar -->
+    <div id="mySidebar" class="sidebar">
+      <a
+        href="javascript:void(0)"
+        id="xbtn"
+        class="closebtn"
+        onclick="closeNav()"
+        >&times;</a
+      >
+      <img src="images/logo hp.png" alt="Logo Harry Potter" />
+      <a href="index.html">Home</a>
+      <a href="collection.html">All Cards</a>
+      <a id="trade-link">Trade</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <header>
+      <button class="openbtn" onclick="openNav()">☰</button>
+    </header>
+
+    <div id="home">
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="images/background-vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="content">
+          <!-- Your content here -->
+          <h1>Wizard Exchange</h1>
+          <div class="links">
+            <a href="login.html">Sign Up / Login</a>
+            <a href="collection.html">All cards</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h3>
+          Welcome to Wizard Exchange, the ultimate destination for Harry Potter
+          fans and collectors alike! Immerse yourself in the magical world of
+          Hogwarts as you explore our platform dedicated to trading Harry Potter
+          cards.
+        </h3>
+      </div>
+
+      <div class="line-block">
+        <a href="profile.html">See your collection</a>
+        <img src="images/card-booster.jpg" alt="" />
+        <button id="openBoosterButton">Open a booster</button>
+      </div>
+    </div>
+
+    <!-- Floating Button -->
+    <button class="floating-btn">Trade</button>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Card Exchange Form</h2>
+        <form id="exchange-form">
+          <label for="person">User:</label>
+          <select id="person" name="person"></select>
+          <label for="card">Card:</label>
+          <select id="card" name="card"></select>
+          <button type="submit">Exchange</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p>Plan du Site</p>
+        <p>Mentions légales</p>
+        <p>Cookies</p>
+        <p>FAQ</p>
+      </div>
+
+      <div></div>
+
+      <div>
+        <p>&copy; 2024 Wizard Exchange. All rights reserved.</p>
+        <p>
+          Contact us at:
+          <a href="mailto:support@wizardexchange.com" style="color: white"
+            >support@wizardexchange.com</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/side-nav.js"></script>
+    <script src="js/booster.js"></script>
+  </body>
+</html>

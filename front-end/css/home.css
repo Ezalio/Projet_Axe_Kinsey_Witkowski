@@ -1,0 +1,187 @@
+/*HOMEPAGE*/
+
+.video-background {
+    border-top: solid white 2px;
+    position: relative;
+    width: 100%; 
+    height: 90vh; 
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+}
+
+.content {
+    position: relative;
+    z-index: 0; 
+    color: white;
+    text-align: center;
+    padding-top: 20%; 
+}
+
+.content h1 {
+    font-size: 5vw;
+}
+
+.content .links {
+  display: flex;
+  justify-content: center;
+}
+
+.content .links a:hover {
+  background-color: #6b63b5;
+}
+
+.content .links a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  border: solid white 2px;
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#home .text-over-image img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+#home .text-over-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+}
+
+.intro {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  margin: 20px;
+}
+
+#home h3 {
+  margin: 4vw 10vw;
+}
+
+#home .line-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+}
+
+#home .line-block a, .line-block button {
+  font-size: larger;
+  color: white;
+  background-color: black;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#home .line-block a:hover, #home .line-block button:hover {
+  font-size: x-large;
+}
+
+#home .line-block img {
+  height: 100%;
+  max-width: 100%;
+}
+
+#boosterModal .modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#boosterModal h2 {
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  height: 270px;
+  width: 180px;
+  margin: 10px 15px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: solid 3.5px;
+  text-align: center;
+
+}
+
+.gryffindor {
+  background-color: #ae0001; /* Dark Red */
+  color: #eeba30;
+}
+
+.hufflepuff {
+  background-color: #ecb939; /* Light Yellow */
+  color: black;
+}
+
+.ravenclaw {
+  background-color: #222f5b; /* Dark Blue */
+  color: #5d5d5d;
+}
+
+.slytherin {
+  background-color: #2a623d; /* Dark Green */
+  color: #aaaaaa;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 2px;
+  background-color: white;
+}
+
+.card p {
+  color: black;
+  font-weight: bold;
+}
+
+#boosterModal .close {
+  cursor: pointer;
+  float: right;
+  font-size: 28px;
+  color: black;
+}
+
+

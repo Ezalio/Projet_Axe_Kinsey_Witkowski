@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <!-- Header / Side Bar -->
+    <div id="mySidebar" class="sidebar">
+      <a
+        href="javascript:void(0)"
+        id="xbtn"
+        class="closebtn"
+        onclick="closeNav()"
+        >&times;</a
+      >
+      <img src="images/logo hp.png" alt="Logo Harry Potter" />
+      <a href="index.html">Home</a>
+      <a href="collection.html">All Cards</a>
+      <a id="trade-link">Trade</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <header>
+      <button class="openbtn" onclick="openNav()">☰</button>
+    </header>
+
+    <div class="form-page">
+      <div class="form-container">
+        <form id="login-form">
+          <h2>Login</h2>
+          <input type="email" id="login-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            required
+          />
+          <div class="error-message" id="login-error"></div>
+          <button type="submit">Login</button>
+        </form>
+
+        <form id="signup-form">
+          <h2>Sign Up</h2>
+          <input type="text" id="signup-username" placeholder="Username" />
+          <input type="email" id="signup-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="signup-password"
+            placeholder="Password"
+            required
+          />
+          <div class="error-message" id="signup-error"></div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <!-- Floating Button -->
+    <button class="floating-btn">Trade</button>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Card Exchange Form</h2>
+        <form id="exchange-form">
+          <label for="person">User:</label>
+          <select id="person" name="person"></select>
+          <label for="card">Card:</label>
+          <select id="card" name="card"></select>
+          <button type="submit">Exchange</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p>Plan du Site</p>
+        <p>Mentions légales</p>
+        <p>Cookies</p>
+        <p>FAQ</p>
+      </div>
+
+      <div></div>
+
+      <div>
+        <p>&copy; 2024 Wizard Exchange. All rights reserved.</p>
+        <p>
+          Contact us at:
+          <a href="mailto:support@wizardexchange.com" style="color: white"
+            >support@wizardexchange.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/side-nav.js"></script>
+  </body>
+</html>

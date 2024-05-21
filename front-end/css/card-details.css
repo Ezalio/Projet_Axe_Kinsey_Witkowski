@@ -1,0 +1,103 @@
+/*PAGE INFO CARTE*/
+#character-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#character-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: solid 3px black;
+  border-radius: 3rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: whitesmoke;
+  margin: 5vw 7vw;
+  padding: 5vw 15vw;
+}
+
+#character-details h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+#character-details img {
+  margin: 20px;
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 5px;
+}
+
+#character-details p {
+  font-size: large;
+}
+
+#character-details div p {
+  text-align: left;
+}
+
+#character-details div p span {
+  display: inline-block;
+  width: 100px;
+}
+
+/* Style en fonction de la maison */
+#character-page.gryffindor #character-details {
+  background-color: #ae0001;
+  border-color: #eeba30;
+  color: white;
+}
+
+#character-page.gryffindor #character-details img {
+  border-color: #eeba30;
+  background-color: white;
+}
+
+#character-page.hufflepuff #character-details {
+  background-color: #ecb939;
+  border-color: black;
+  color: black;
+}
+
+#character-page.hufflepuff #character-details img {
+  border-color: black;
+  background-color: white;
+}
+
+#character-page.slytherin #character-details {
+  background-color: #2a623d;
+  border-color: #aaaaaa;
+  color: white;
+}
+
+#character-page.slytherin #character-details img {
+  border-color: #aaaaaa;
+  background-color: white;
+}
+
+#character-page.ravenclaw #character-details {
+  background-color: #5d5d5d;
+  border-color: #222f5b;
+  color: white;
+}
+
+#character-page.ravenclaw #character-details img {
+  border-color: #222f5b;
+  background-color: white;
+}
+
+#character-page.unknown #character-details {
+  background-color: lightgray;
+}
+
+#character-page.unknown #character-details img  {
+  background-color: white;
+}
