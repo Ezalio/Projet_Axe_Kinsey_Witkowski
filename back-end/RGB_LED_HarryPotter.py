@@ -5,8 +5,8 @@ import utime
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-ssid = 'Galaxy S97ea3'
-password = 'Starwars22'
+ssid = ''
+password = ''
 wlan.connect(ssid, password)
 
 while not wlan.isconnected():
